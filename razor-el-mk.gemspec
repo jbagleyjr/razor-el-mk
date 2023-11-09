@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "razor-mk-agent"
-  spec.version       = "009"
+  spec.version       = "010"
   spec.authors       = ["Puppet"]
   spec.email         = ["info@puppet.com"]
   spec.description   = "The agent for Razor Microkernels"

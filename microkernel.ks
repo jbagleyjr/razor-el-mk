@@ -28,13 +28,16 @@ repo --name=base --mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$base
 repo --name=updates --mirrorlist=http://mirrorlist.centos.org/?release=7&arch=$basearch&repo=updates
 repo --name=puppetlabs-products --baseurl=http://yum.puppetlabs.com/el/7/products/$basearch
 repo --name=puppetlabs-deps --baseurl=http://yum.puppetlabs.com/el/7/dependencies/$basearch
+repo --name=elrepo --baseurl=http://elrepo.org/linux/elrepo/el7/$basearch/
+repo --name=elrepo-kernel --baseurl=http://elrepo.org/linux/kernel/el7/$basearch/
+
 
 #
 # Add all the packages after the base packages
 #
 %packages --excludedocs --nobase
 bash
-kernel
+kernel-ml
 grub2
 e2fsprogs
 passwd
